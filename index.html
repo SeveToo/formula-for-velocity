@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>velocity-Formula</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <form class="formula-form">
+      <h1>Formula for velocity</h1>
+      <p>v = Δs/Δt</p>
+      <div class="input-box">
+        <label for="input-time">Time</label>
+        <span class="unit">[ s ]</span>
+        <input
+          type="number"
+          class="input-time"
+          id="input-time"
+          placeholder=" time [s] "
+          min="0"
+        />
+      </div>
+      <div class="input-box">
+        <label for="input-velocity">Velocity</label>
+        <span class="unit">[ m/s ]</span>
+        <input
+          type="number"
+          class="input-velocity"
+          id="input-velocity"
+          placeholder=" velocity [m/s] "
+          min="0"
+        />
+      </div>
+      <div class="input-box">
+        <label for="input-distance">Distance</label>
+        <span class="unit">[ m ]</span>
+        <input
+          type="number"
+          class="input-distance"
+          id="input-distance"
+          placeholder=" distance [m] "
+          min="0"
+        />
+      </div>
+    </form>
+
+    <script src="script.js"></script>
+  </body>
+</html>

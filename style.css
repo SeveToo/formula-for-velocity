@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+
+body {
+    box-sizing: border-box;
+    background: rgba(50, 50, 50, 0.6);
+    font-family: 'Roboto', sans-serif;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+
+.formula-form {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    justify-content: center;
+    background: #fff;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -60%);
+    height: 22rem;
+    max-width: 30rem;
+    width: 100%;
+    padding: 1rem;
+    border-radius: 1rem;
+    font-weight: 500;
+}
+
+.formula-form h1 {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    font-size: 2rem;
+    overflow: hidden;
+}
+
+.formula-form p {
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    font-size: 1.4rem;
+    margin: 1rem 0 1rem 0;
+}
+
+.input-box {
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+.formula-form input {
+    box-sizing: border-box;
+    margin: .3rem 0 1rem 0;
+    border: none;
+    outline: none;
+    background: rgb(240, 240, 240);
+    padding: 1.2rem .6rem;
+    border-radius: .2rem;
+    height: 1.6rem;
+    font-weight: 550;
+    width: 100%;
+}
+
+.input-box .unit {
+    position: absolute;
+    right: 0px;
+    top: 24px;
+    background: rgb(95, 204, 255);
+    overflow: hidden;
+    width: 50px;
+    padding: 9px;
+    height: 20px;
+    font-weight: 400;
+    font-size: 14px;
+    border-left: solid 3px rgb(3, 124, 194);
+    border-radius: 0 .2rem .2rem 0;
+}
+
+
+/* Style the input field for numbers by removing arrows - spin on scroll,
+ after selecting input field to active status, still changes value*/
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
+  }
